@@ -1,9 +1,51 @@
 <html>
     <head>
-        <title> CarTips </title>
-        <link rel="stylesheet"href="StyleCarTips.css"/>        
+        <title> CarTips </title>      
         <link rel="icon"href="LogoCarTips.ico"/>
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <style>
+            * {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#header {
+    margin:auto;
+    width:1359px;
+    font-family: Arial, 'Times New Roman';
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav li a {
+    background-color: rgb(226, 232, 247);
+    color: #000;
+    text-decoration:none;
+    padding:10px 75px;
+    display:block;
+}
+.nav li a:hover{
+    background-color:rgb(214, 223, 248);
+}
+
+
+.nav > li {
+    float:left;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+        </style>
     </head>
 
     <body>
