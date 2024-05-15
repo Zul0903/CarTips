@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#header {
+    margin:auto;
+    width:1359px;
+    font-family: Arial, 'Times New Roman';
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav li a {
+    background-color: rgb(226, 232, 247);
+    color: #000;
+    text-decoration:none;
+    padding:10px 75px;
+    display:block;
+}
+.nav li a:hover{
+    background-color:rgb(214, 223, 248);
+}
+
+
+.nav > li {
+    float:left;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
