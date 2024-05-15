@@ -1,105 +1,195 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CarTips </title>
+    <link rel="icon" href="LogoCarTips.ico">
+         
+    <!-- Enlazar Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="StyleCarTips.css"> 
+      
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- Estilos personalizados -->
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="LogoCarTips.ico"></a>
+        <!-- Botón de colapso en dispositivos pequeños -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos de la barra de navegación -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown"> <!-- Agregamos la clase 'dropdown' al elemento de lista -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Conceptos y Tips
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Agregamos la clase 'dropdown-menu' al menú desplegable -->
+                        <a class="dropdown-item" href="Conceptos.html">Conceptos</a>
+                        <a class="dropdown-item" href="Tips.html">Tips</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Automaticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Estandar</a>
+                </li>
+                <li class="nav-item dropdown"><!-- Agregamos la clase 'dropdown' al elemento de lista -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reglamento
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Agregamos la clase 'dropdown-menu' al menú desplegable -->
+                        <a class="dropdown-item" href="https://portal.monterrey.gob.mx/pdf/reglamentos/1/5_Reglamento_de_Tr%C3%A1nsito_y_Vialidad_del_Municipio_de_Monterrey.pdf"target="_blank">Monterrey</a>
+                        <a class="dropdown-item" href="http://legismex.mty.itesm.mx/estados/ley-nl/NL-RM-Gpe-TranVial2020_09.pdf"target="_blank">Guadalupe</a>
+                        <a class="dropdown-item" href="https://apodaca.gob.mx/wp-content/uploads/2022/07/PROYECTO_TRANSITO.pdf"target="_blank">Apodaca</a>
+                        <a class="dropdown-item" href="https://sn.gob.mx/wp-content/uploads/2022/03/Reglamento-Interior-de-la-Secretari%CC%81a-de-Movilidad-de-San-Nicola%CC%81s-de-los-Garza-Nuevo-Leo%CC%81n.pdf"target="_blank">San Nicolás</a>
+                        <a class="dropdown-item" href="https://escobedo.gob.mx/?p=reghom"target="_blank">General Escobedo</a>
+                        <a class="dropdown-item" href="https://www.stacatarina.gob.mx/t/ayt/REGLAMENTOS/De%20Tr%C3%A1nsito%20y%20Vialidad%20del%20Municipio%20de%20Santa%20Catarina,%20Nuevo%20Le%C3%B3n.pdf"target="_blank">Santa Catarina</a>
+                        <a  class="dropdown-item" href="https://juarez-nl.gob.mx/transparencia/Informacion%20adicional/Secretarias/Secretaria%20Ayuntamiento/REGLAMENTOS/Reglamento%20de%20Tr%C3%A1nsito%20y%20Vialidad%20del%20Municipio%20de%20Ju%C3%A1rez,%20NL.pdf"target="_blank">Juárez</a>
+                        <a class="dropdown-item" href="https://trans.garcia.gob.mx/admin/uploads/Reglamento%20de%20Tr%C3%A1nsito%20y%20Vialidad%20del%20Municipio%20de%20Garc%C3%ADa%20Nuevo%20Le%C3%B3n.-.pdf"target="_blank">García</a>
+                        <a class="dropdown-item" href="https://pesqueria.gob.mx/wp-content/uploads/2020/07/REGLAMENTO-DE-TRANSITO-Y-VIALIDAD-PESQUERIA_N.pdf"target="_blank">Pesquería</a>
+                        <a class="dropdown-item" href="https://cms-api.sanpedro.gob.mx/storage/files/06f5b0b3-a116-4fd4-a7bb-b915b4a8a249.pdf"target="_blank">San Pedro Garza García</a>
+                        <a class="dropdown-item" href="https://vialidades.com.mx/wp-content/uploads/2024/01/Reglamento-de-Transito-y-Vialidad-de-Ciudad-Cadereyta-Jimenez.pdf"target="_blank">Cadereyta</a>
+                        <a class="dropdown-item" href="https://santiago.gob.mx/wp-content/uploads/2016/12/REGLAMENTO-DE-TRANSITO-Y-VIALIDAD-DEL-MUNICIPIO-DE-SANTIAGO-NUEVO-LEON.pdf"target="_blank">Santiago</a>
+                        <a class="dropdown-item" href="https://www.zuazua.gob.mx/assets/pdf/consulta/REGLAMENTO%20DE%20TRANSITO%20Y%20VIALIDAD%20DE%20GENERAL%20ZUAZUA%20N.L..pdf"target="_blank">General Zuazua</a>
+                        <a class="dropdown-item" href="https://vialidades.com.mx/wp-content/uploads/2024/01/Reglamento-de-Transito-y-Vialidad-para-el-Municipio-de-Cienega-de-Flores.pdf"target="_blank">Ciénega de Flores</a>
+                        <a class="dropdown-item" href="https://vialidades.com.mx/wp-content/uploads/2024/01/Reglamento-de-Transito-y-Vialidad-del-Municipio-de-El-Carmen.pdf" target="_blank">El Carmen</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown"> <!-- Agregamos la clase 'dropdown' al elemento de lista -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contacto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Agregamos la clase 'dropdown-menu' al menú desplegable -->
+                        <a class="dropdown-item text-center d-inline-block" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a class="dropdown-item text-center d-inline-block" href="Tips.html"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conocenos -->      
+    <div class="contenedor principal">
+        <div class="contenedor-img">
+            <img src="LogoCarTips.png" alt="">
+        </div>
+        <div>
+         <div class="text-CONOCENOS"><h4>CONÓCENOS</h4></div>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti tenetur neque debitis dicta quis mollitia reiciendis esse illum assumenda rerum saepe provident, sunt consequatur ducimus nulla deleniti, quo accusamus?</p>
+        </div>
+        
+    </div>
+
+    <!-- Scripts de Bootstrap (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- Script de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Obtén todos los elementos del menú desplegable
+        var dropdownMenus = document.querySelectorAll('.dropdown-menu');
+    
+        // Obtén todos los elementos de activación del menú desplegable
+        var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+        // Agrega un listener para el evento mouseover a cada enlace
+        dropdownToggles.forEach(function(dropdownToggle) {
+            dropdownToggle.addEventListener('mouseover', function() {
+                // Muestra el menú desplegable correspondiente al pasar el ratón sobre el enlace
+                var dropdownMenu = this.nextElementSibling;
+                dropdownMenu.style.display = 'block';
+            });
+        });
+    
+        // Agrega un listener para el evento mouseout a cada menú desplegable
+        dropdownMenus.forEach(function(dropdownMenu) {
+            dropdownMenu.addEventListener('mouseout', function() {
+                // Oculta el menú desplegable correspondiente cuando el ratón sale de él
+                this.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- <html>
+
+
+    <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>/li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     <head>
-        <title> CarTips </title>      
-        <link rel="icon"href="LogoCarTips.ico">
-        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <style>
-            * {
-    padding: 0px;
-    margin: 0px;
-}
 
 
-#header {
-    margin:auto;
-    width:1359px;
-    font-family: Arial, 'Times New Roman';
-}
-
-ul, ol {
-    list-style:none;
-}
-
-.nav li a {
-    background-color: rgb(226, 232, 247);
-    color: #000;
-    text-decoration:none;
-    padding:10px 75px;
-    display:block;
-}
-.nav li a:hover{
-    background-color:rgb(214, 223, 248);
-}
-
-
-.nav > li {
-    float:left;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-        </style>
+        
     </head>
+   
 
     <body>
+        <header>
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Conceptos y tips</a>
+                 <ul>
+                      <li><a href="Conceptos.html">Conceptos</a></li>
+                      <li><a href="Tips.html">Tips</a></li>
+                 </ul>
+               </li>
+     
+          <li><a href="Automaticos.html">Automáticos</a></li>
+     
+          <li><a href="Estandar.html">Estándar</a></li>
+     
+          <li><a href="">Reglamento</a>
+          
+     
+         </li>
+         
+         <li><a href="">Contacto</a>
+             <ul>
+                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+             </ul>
+           </li>
+     
+         </ul>
+        </header>
 
+    <div>
+        <p>gola
 
-    <div id="header">
-
-       <ul class="nav">
-           <li><a href="">Inicio</a></li>
-           <li><a href="">Conceptos y tips</a>
-            <ul>
-                 <li><a href="">Conceptos</a></li>
-                 <li><a href="">Tips</a></li>
-            </ul>
-          </li>
-
-     <li><a href="">Automaticos</a></li>
-
-     <li><a href="">Estandar</a></li>
-
-     <li><a href="">Reglamento</a>
-     <ul>
-        <li><a href="https://portal.monterrey.gob.mx/pdf/reglamentos/1/5_Reglamento_de_Tr%C3%A1nsito_y_Vialidad_del_Municipio_de_Monterrey.pdf"target="_blank">Monterrey</a></li>
-        <li><a href="http://legismex.mty.itesm.mx/estados/ley-nl/NL-RM-Gpe-TranVial2020_09.pdf"target="_blank">Guadalupe</a></li>
-        <li><a href="https://apodaca.gob.mx/wp-content/uploads/2022/07/PROYECTO_TRANSITO.pdf"target="_blank">Apodaca</a></li>
-        <li><a href="https://sn.gob.mx/wp-content/uploads/2022/03/Reglamento-Interior-de-la-Secretari%CC%81a-de-Movilidad-de-San-Nicola%CC%81s-de-los-Garza-Nuevo-Leo%CC%81n.pdf"target="_blank">San Nicolás</a></li>
-        <li><a href="https://escobedo.gob.mx/?p=reghom"target="_blank">General Escobedo</a></li>
-        <li><a href="https://www.stacatarina.gob.mx/t/ayt/REGLAMENTOS/De%20Tr%C3%A1nsito%20y%20Vialidad%20del%20Municipio%20de%20Santa%20Catarina,%20Nuevo%20Le%C3%B3n.pdf"target="_blank">Santa Catarina</a></li>
-        <li><a href="https://juarez-nl.gob.mx/transparencia/Informacion%20adicional/Secretarias/Secretaria%20Ayuntamiento/REGLAMENTOS/Reglamento%20de%20Tr%C3%A1nsito%20y%20Vialidad%20del%20Municipio%20de%20Ju%C3%A1rez,%20NL.pdf"target="_blank">Juárez</a></li>
-        <li><a href="https://trans.garcia.gob.mx/admin/uploads/Reglamento%20de%20Tr%C3%A1nsito%20y%20Vialidad%20del%20Municipio%20de%20Garc%C3%ADa%20Nuevo%20Le%C3%B3n.-.pdf"target="_blank">García</a></li>
-        <li><a href="https://pesqueria.gob.mx/wp-content/uploads/2020/07/REGLAMENTO-DE-TRANSITO-Y-VIALIDAD-PESQUERIA_N.pdf"target="_blank">Pesquería</a></li>
-        <li><a href="https://cms-api.sanpedro.gob.mx/storage/files/06f5b0b3-a116-4fd4-a7bb-b915b4a8a249.pdf"target="_blank">San Pedro Garza García</a></li>
-        <li><a href="https://vialidades.com.mx/wp-content/uploads/2024/01/Reglamento-de-Transito-y-Vialidad-de-Ciudad-Cadereyta-Jimenez.pdf"target="_blank">Cadereyta</a></li>
-        <li><a href="https://santiago.gob.mx/wp-content/uploads/2016/12/REGLAMENTO-DE-TRANSITO-Y-VIALIDAD-DEL-MUNICIPIO-DE-SANTIAGO-NUEVO-LEON.pdf"target="_blank">Santiago</a></li>
-        <li><a href="https://www.zuazua.gob.mx/assets/pdf/consulta/REGLAMENTO%20DE%20TRANSITO%20Y%20VIALIDAD%20DE%20GENERAL%20ZUAZUA%20N.L..pdf"target="_blank">General Zuazua</a></li>
-        <li><a href="https://vialidades.com.mx/wp-content/uploads/2024/01/Reglamento-de-Transito-y-Vialidad-para-el-Municipio-de-Cienega-de-Flores.pdf"target="_blank">Ciénega de Flores</a></li>
-        <li><a href="https://vialidades.com.mx/wp-content/uploads/2024/01/Reglamento-de-Transito-y-Vialidad-del-Municipio-de-El-Carmen.pdf" target="_blank">El Carmen</a></li>
-       
-    </ul>
-
-    </li>
-    
-    <li><a href="">Contacto</a>
-        <ul>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-             <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-        </ul>
-      </li>
-
-    </ul>
+        </p>
     </div>
 
 
 
    </body>
 
-</html>
+</html> -->
