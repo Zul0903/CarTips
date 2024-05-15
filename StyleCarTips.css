@@ -1,41 +1,36 @@
-* {
-    padding: 0px;
-    margin: 0px;
+
+ .navbar {
+    background-color: rgb(205, 208, 218); /* Nuevo color de fondo */
+}
+.navbar-brand, .navbar-nav .nav-link {
+    color: #000; /* Cambiar color de texto */
+}
+.navbar-toggler {
+    color: #000; /* Cambiar color del botón toggle */
+}
+.contenedor{
+    max-width: 85%;
+    margin: 20px auto;
+   
+}
+.principal{
+    display: grid;
+    grid-template-columns:40% 60%;
+    background-color: rgb(185, 198, 233);
+    padding: 20px 0;
+    border-radius: 20px;
+    height: 70vh;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
 }
 
-
-#header {
-    margin:auto;
-    width:1359px;
-    font-family: Arial, 'Times New Roman';
+.texto-principal {
+    padding: 0 30px;
 }
-
-ul, ol {
-    list-style:none;
-}
-
-.nav li a {
-    background-color: rgb(226, 232, 247);
-    color: #000;
-    text-decoration:none;
-    padding:10px 75px;
-    display:block;
-}
-.nav li a:hover{
-    background-color:rgb(214, 223, 248);
-}
-
-
-.nav > li {
-    float:left;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-.nav li:hover > ul {
-    display:block;
+ 
+.text-CONOCENOS { 
+    text-align: end;
+    padding-right: 35px;
 }
